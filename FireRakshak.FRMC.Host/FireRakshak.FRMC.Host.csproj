@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UserSecretsId>dotnet-FireRakshak.FRMC.Host-03f02268-472a-4e9c-bf48-74f0efaac0cc</UserSecretsId>
+    <LangVersion>10.0</LangVersion>
+    <NoWarn>CS8618;CS8601;CS8602;CS8604;CS8600;CS8619</NoWarn>
+
+    <!-- Preprocessor Macro: Uncomment to build for WSS (Secure), comment out to build for WS (Unsecure) -->
+    <DefineConstants>$(DefineConstants);USE_SECURE</DefineConstants>
+	  <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WebSocketServerHostedService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="localhost.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Scripts\setup_ip.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FireRakshak.FRMC.Core\FireRakshak.FRMC.Core.csproj" />
+    <ProjectReference Include="..\FireRakshak.FRMC.Managers\FireRakshak.FRMC.Managers.csproj" />
+    <ProjectReference Include="..\FireRakshak.FRMC.Infrastructure\FireRakshak.FRMC.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

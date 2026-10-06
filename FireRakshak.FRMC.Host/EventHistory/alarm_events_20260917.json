@@ -1,0 +1,71 @@
+[
+  {
+    "timestamp": "2026-09-17T09:51:59.5124023Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-17T09:57:10.3797817Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": false,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-17T09:57:59.5161449Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 49.1372784,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication lost for 49 seconds"
+      ]
+    }
+  }
+]

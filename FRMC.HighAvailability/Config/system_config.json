@@ -1,0 +1,15 @@
+{
+  "ipAddress": "192.168.1.100",
+  "subnetMask": "255.255.255.0",
+  "gateway": "192.168.1.1",
+  "systemTime": "2026-01-02T15:53:44.5982891+05:30",
+  "softwareVersion": "0.1",
+  "backgroundServiceInterval": 5000,
+  "numberOfRelays": 64,
+  "maxZonesPerChannel": 1000,
+  "dtsPollingInterval": 6000,
+  "alarmEvaluationInterval": 1000,
+  "alarmStatusBroadcastInterval": 2000,
+  "healthStatusBroadcastInterval": 5000,
+  "autoAlarmClearTimeout": 30
+}

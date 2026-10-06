@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-04-22T06:03:44.7046784Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 41.7768119,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 42 seconds",
+    "details": "Last communication: 2026-04-22 06:03:01",
+    "firstDetectedAt": "2026-04-22T06:03:44.7046784Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-04-22T06:04:18.471061Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 41.7768119,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 42 seconds",
+    "details": "Last communication: 2026-04-22 06:03:01",
+    "firstDetectedAt": "2026-04-22T06:03:44.7046784Z",
+    "clearedAt": "2026-04-22T06:04:18.471061Z"
+  }
+]

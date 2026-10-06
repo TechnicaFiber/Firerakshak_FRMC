@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-06-26T04:51:19.0900808Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T04:52:59.3304867Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": false,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T07:02:03.2158235Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T07:02:47.0935137Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T07:05:25.9242295Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T07:06:10.3497946Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": true,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-26T07:06:24.0665822Z",
+    "channelId": 0,
+    "zoneId": 0,
+    "zoneName": "System",
+    "alarmType": "SystemHealth:DtsCommunicationLost",
+    "isActive": false,
+    "triggerValue": 11,
+    "breachPosition": 10,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": [
+        "DTS communication never established"
+      ]
+    }
+  }
+]

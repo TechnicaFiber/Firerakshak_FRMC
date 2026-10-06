@@ -1,0 +1,24 @@
+{
+  "EthernetPorts": [
+    {
+      "Role": "NETRA1",
+      "InterfaceName": "",
+      "MacAddress": "XX-XX-XX-XX-XX-XX",
+      "Ip_Address": "0.0.0.0",
+      "SubnetMask": "255.255.255.0",
+      "Gateway": "",
+      "DhcpEnabled": true,
+      "LastUpdatedUtc": "2026-01-17T00:00:00Z"
+    },
+    {
+      "Role": "NETRA2",
+      "InterfaceName": "",
+      "MacAddress": "YY-YY-YY-YY-YY-YY",
+      "Ip_Address": "0.0.0.0",
+      "SubnetMask": "255.255.255.0",
+      "Gateway": "",
+      "DhcpEnabled": true,
+      "LastUpdatedUtc": "2026-01-17T00:00:00Z"
+    }
+  ]
+}

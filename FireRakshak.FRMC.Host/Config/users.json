@@ -1,0 +1,27 @@
+[
+  {
+    "Username": "admin",
+    "HashedPassword": "bepH3SkTTeIj98DlewELGw==:gAcCj5jRJajcWiHZyd\u002BMnLk4gGSG2Cz7/Yhu\u002BS08izk=",
+    "Role": 1
+  },
+  {
+    "Username": "Mrudula",
+    "HashedPassword": "WB4slUjUYCZhOYeG187Qig==:CjrZG1ePg5YV34bgfUTE/P5hookZkqIr5uWgxgC3vGQ=",
+    "Role": 0
+  },
+  {
+    "Username": "vj80",
+    "HashedPassword": "GLx0p3g\u002B8awXDYcbTBaRgg==:X1fRbHILKy\u002BitUQFfve/YHwvnRNRQ86ClKnqvm\u002B/jiE=",
+    "Role": 0
+  },
+  {
+    "Username": "testuser",
+    "HashedPassword": "VVX0jPcqqDNzozRMJtDpGA==:ce3\u002BOabF1xYJTP4dyfu/e9lHBMu2qhZza6XzghsaExA=",
+    "Role": 1
+  },
+  {
+    "Username": "admin1",
+    "HashedPassword": "hoUcxeJXbjFPnlX5y3OLJw==:ccpmRs2uAHZ66bCFWO/qDvy/daz8O5w1hl/BilUDEoU=",
+    "Role": 1
+  }
+]

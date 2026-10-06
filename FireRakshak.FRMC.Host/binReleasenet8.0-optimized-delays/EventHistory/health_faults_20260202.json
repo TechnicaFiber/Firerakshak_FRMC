@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2026-02-02T10:50:23.5716368Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 63905626223.54029,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 63905626224 seconds",
+    "details": "Last communication: 0001-01-01 00:00:00",
+    "firstDetectedAt": "2026-02-02T10:50:23.5716368Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-02-02T10:52:33.6880151Z",
+    "faultId": 3,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2026-02-02T10:52:33.6880151Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-02-02T10:52:35.6551575Z",
+    "faultId": 3,
+    "faultType": "CpuLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2026-02-02T10:52:33.6880151Z",
+    "clearedAt": "2026-02-02T10:52:35.6551575Z"
+  },
+  {
+    "timestamp": "2026-02-02T10:52:59.7961255Z",
+    "faultId": 4,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2026-02-02T10:52:59.7961255Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-02-02T10:53:01.6375424Z",
+    "faultId": 4,
+    "faultType": "CpuLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2026-02-02T10:52:59.7961255Z",
+    "clearedAt": "2026-02-02T10:53:01.6375424Z"
+  }
+]

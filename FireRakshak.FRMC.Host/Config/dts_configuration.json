@@ -1,0 +1,81 @@
+{
+  "LastUpdated": "2026-09-10T10:55:47.8015886Z",
+  "DtsIpAddress": "192.168.24.11",
+  "DtsPort": 3000,
+  "ChannelBitmask": 7,
+  "EnabledChannelIds": [
+    1,
+    2,
+    3
+  ],
+  "PulseWidthNs": 10,
+  "LaserCurrentMa": 56,
+  "SystemSamplingFrequencyHz": 250000000,
+  "Channels": [
+    {
+      "ChannelId": 1,
+      "IsEnabled": true,
+      "CableLengthMeters": 3000,
+      "PulseFrequencyHz": 13000,
+      "AccumulationCount": 78000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 2,
+      "IsEnabled": true,
+      "CableLengthMeters": 3000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 3,
+      "IsEnabled": true,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 4,
+      "IsEnabled": false,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 5,
+      "IsEnabled": false,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 6,
+      "IsEnabled": false,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 7,
+      "IsEnabled": false,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    },
+    {
+      "ChannelId": 8,
+      "IsEnabled": false,
+      "CableLengthMeters": 6000,
+      "PulseFrequencyHz": 14000,
+      "AccumulationCount": 84000,
+      "CalculatingTimeSeconds": 6
+    }
+  ],
+  "RawIniPayload": "[global]\ndev_name = \nmems = 1\nchtotalnum = 16\nchscancfg = 7\nrefplace = 130\nrefavgcnt = 40\nreflen = 190\nlasercurrent = 56\npulsewidth = 10\nalarmperiod = 2\nfaulttime = 60\t//????????????\nstokeszero = 10\nantistokeszero = 10\nstokes_freqdiv_num = 10\nzonelocation = 1\t//????????\ndistributedlocation = 1     //??????????\ndetection = 0\ndiffertempinterval = 15\nsingle_apd = 0\nioctrlswitch = 1\nswitchstoptime = 6000    \ntrigmode = 0\nuart_ttl = 1\ndts_lcm = 2\nsys_freq = 250000000\nzone_fault = 0\ndisp_avg = 3\nbit32 = 1\ninner_relay = 0\nadc1gaina = 1\t//????,????0~12\nadc2gaina = 0\t//????,????0~12\nadc1gainb = 1\t//????,????0~12\nadc2gainb = 0\t//????,????0~12\nadc1offseta = 3\t\t//???? ????????-4??3,??????????2??\nadc2offseta = -4\t\t//???? ????????-4??3\nadc1offsetb = 3\t\t//???? ????????-4??3\nadc2offsetb = -4\t//???? ????????-4??3\nadc1a = 2048\t//2047??????????????2048=0x800\nadc2a = 2048 \t//2049 ??????\nadc3a = 2048\t//????\u0022\nadc4a = 2048\t//????\u0022\nadc1b = 0\t //??????-26\nadc2b = 0\t//??????-11\nadc3b = 0\t//????\u0022\nadc4b = 0\t//????\u0022\nfibertype = 1\ndoublelight = 1\npulsewidth1 = 10\ncoef = 1.000\ncan_bitrate = 1000\ndel_as = 2\ndel_s = 0\n\n[ext_relay]\n\n[coded_pluse]\npluse[0] = 0xFFFF\npluse[1] = 0x0000\n\n[uart0]\ntype = 0\ninterface = 0\nbaudrate = 9600\ndatabit = 8\nparity = N\nstopbit = 1\n\n[uart1]\ntype = 0\ninterface = 0\nbaudrate = 19200\ndatabit = 8\nparity = N\nstopbit = 1\n\n[uart2]\ntype = 0\ninterface = 1\nbaudrate = 115200\ndatabit = 8\nparity = N\nstopbit = 1\n\n[ch1_basic]\nchlen = 3000\navgnum = 78000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0.000000\npulsefreq = 13000\n\n[ch1_insplace]\nn1 = 3200\nn2 = 4800\nn3 = 6400\nn4 = 8000\nn5 = 9600\n\n[ch1_revisecoef]\nn1 = 50,0.0000000100,-0.0000018913,31.0000000000,0.0017500000\nn2 = 190,0.0000000030,-0.0000156972,22.0000000000,0.0017000000\n\n[ch1_connect]\n\n[ch2_basic]\nchlen = 3000\navgnum = 84000    \nbaseplace = 400\nbaseavgcnt = 40\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0.000000\npulsefreq = 14000\n\n[ch2_insplace]\n\n[ch2_revisecoef]\nn1 = 190,0.0000000050,0.0003173225,25.0000000000,0.0017000000\n\n[ch2_connect]\n\n[ch3_basic]\nchlen = 6000\navgnum = 84000    \nbaseplace = 400\nbaseavgcnt = 40\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0.000000\npulsefreq = 14000\n\n[ch3_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\nn4 = 6400\nn5 = 8000\nn6 = 9600\n\n[ch3_revisecoef]\nn1 = 50,0.0000000013,-0.0000683758,25.0000000000,0.0017000000\nn2 = 190,0.0000000035,0.0000187305,25.0000000000,0.0017500000\n\n[ch3_connect]\n\n[ch4_basic]\nchlen = 6000\navgnum = 84000    \nbaseplace = 40\nbaseavgcnt = 40\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0.000000\npulsefreq = 14000\n\n[ch4_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\nn4 = 6400\nn5 = 8000\nn6 = 9600\n\n[ch4_revisecoef]\nn1 = 50,0.0000000101,-0.0000705216,25.0000000000,0.0017000000\nn2 = 190,0.0000000031,0.0000615374,29.0000000000,0.0017500000\n\n[ch4_connect]\n\n[ch5_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch5_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch5_revisecoef]\nn1 = 50,0.0000000063,-0.0000705105,25.0000000000,0.0000000000\nn2 = 190,0.0000000061,0.0000098551,25.0000000000,0.0000000000\n\n[ch5_revisecoef1]\n\n[ch5_connect]\n\n[ch6_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch6_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch6_revisecoef]\nn1 = 50,0.0000000090,-0.0000725939,25.0000000000,0.0017000000\nn2 = 190,0.0000000060,0.0000099918,25.0000000000,0.0017000000\n\n[ch6_revisecoef1]\n\n[ch6_connect]\n\n[ch7_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch7_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch7_revisecoef]\nn1 = 50,0.0000000037,-0.0000721567,25.0000000000,0.0017000000\nn2 = 190,0.0000000058,0.0000113611,25.0000000000,0.0170000000\n\n[ch7_revisecoef1]\n\n[ch7_connect]\n\n[ch8_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch8_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch8_revisecoef]\nn1 = 50,0.0000000043,-0.0000709061,25.0000000000,0.0017000000\nn2 = 190,0.0000000057,0.0000145657,25.0000000000,0.0017000000\n\n[ch8_revisecoef1]\n\n[ch8_connect]\n\n[ch9_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch9_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch9_revisecoef]\nn1 = 50,0.0000000003,-0.0000716595,25.0000000000,0.0017000000\nn2 = 190,0.0000000057,0.0000135522,25.0000000000,0.0017000000\n\n[ch9_revisecoef1]\n\n[ch9_connect]\n\n[ch10_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch10_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch10_revisecoef]\nn1 = 50,0.0000000035,-0.0000733315,25.0000000000,0.0017000000\nn2 = 190,0.0000000056,0.0000131749,25.0000000000,0.0017000000\n\n[ch10_revisecoef1]\n\n[ch10_connect]\n\n[ch11_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch11_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch11_revisecoef]\nn1 = 50,0.0000000026,-0.0000733654,25.0000000000,0.0017000000\nn2 = 190,0.0000000059,0.0000120596,25.0000000000,0.0017000000\n\n[ch11_revisecoef1]\n\n[ch11_connect]\n\n[ch12_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch12_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch12_revisecoef]\nn1 = 50,0.0000000074,-0.0000753903,25.0000000000,0.0017000000\nn2 = 190,0.0000000061,0.0000078409,25.0000000000,0.0017000000\n\n[ch12_revisecoef1]\n\n[ch12_connect]\n\n[ch13_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch13_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch13_revisecoef]\nn1 = 50,0.0000000009,-0.0000759135,25.0000000000,0.0017000000\nn2 = 190,0.0000000061,0.0000047290,25.0000000000,0.0017000000\n\n[ch13_revisecoef1]\n\n[ch13_connect]\n\n[ch14_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch14_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch14_revisecoef]\nn1 = 50,0.0000000018,-0.0000760467,25.0000000000,0.0017000000\nn2 = 190,0.0000000061,0.0000054852,25.0000000000,0.0017000000\n\n[ch14_revisecoef1]\n\n[ch14_connect]\n\n[ch15_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch15_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch15_revisecoef]\nn1 = 50,0.0000000034,-0.0000762259,25.0000000000,0.0017000000\nn2 = 190,0.0000000061,0.0000056959,25.0000000000,0.0017000000\n\n[ch15_revisecoef1]\n\n[ch15_connect]\n\n[ch16_basic]\nchlen = 6000\npulsefreq = 14000\navgnum = 84000    \nbaseplace = 100\nbaseavgcnt = 10\ntempcoef = 0.001700\nlabelcoef = 1.000000\nlabeloffset = 0\n\n[ch16_insplace]\nn1 = 1600\nn2 = 3200\nn3 = 4800\n\n[ch16_revisecoef]\nn1 = 50,-0.0000000381,-0.0000192908,23.0000000000,0.0017000000\nn2 = 190,0.0000000071,-0.0000218304,23.0000000000,0.0017000000\n\n[ch16_revisecoef1]\n\n[ch16_connect]\n\n[ch1_fixpos]\n\n[ch2_fixpos]\n\n[ch3_fixpos]\n\n[ch4_fixpos]\n\n[ch5_fixpos]\n\n[ch6_fixpos]\n\n[ch7_fixpos]\n\n[ch8_fixpos]\n\n[ch_fault]\np[0] = [0x0001,0x0000,0x0000,0x0000,0x0,0x0,0x0,0x0,0x0]\np[1] = [0x0,0x0,0x2,0x0,0x0,0x0,0x0,0x0,0x0]\np[2] = [0x0,0x0,0x4,0x0,0x0,0x0,0x0,0x0,0x0]\np[3] = [0x0,0x0,0x8,0x0,0x0,0x0,0x0,0x0,0x0]\np[4] = [0x0,0x0,0x10,0x0,0x0,0x0,0x0,0x0,0x0]\np[5] = [0x0,0x0,0x20,0x0,0x0,0x0,0x0,0x0,0x0]\np[6] = [0x0,0x0,0x40,0x0,0x0,0x0,0x0,0x0,0x0]\np[7] = [0x0,0x0,0x80,0x0,0x0,0x0,0x0,0x0,0x0]\n\n[alarmpolicy]\np[0].name = ??????\np[0].maxthreshold = 60\np[0].slopetemp = 9.000000\np[0].offsetslopetemp = 0.000000\np[0].maxenable = 1\np[0].slopeenable = 1\np[1].name = test??????test??????test??????test??????\np[1].maxthreshold = 70.000000\np[1].slopetemp = 7.000000\np[1].offsetslopetemp = 0.000000\np[1].maxenable = 1\np[1].slopeenable = 1\np[2].name = ???\np[2].maxthreshold = 85.000000\np[2].slopetemp = 9.000000\np[2].offsetslopetemp = 0.000000\np[2].maxenable = 1\np[2].slopeenable = 1\n\n[zone]\np[0].name = 1\np[0].fire = [0,0,0,0,0,0,0,0,0]\np[0].fault = [0,0,0,0,0,0,0,0,0]\np[1].name = 2\np[1].fire = [0x0000,0x0000,0x0000,0x0000,0x0,0x0,0x0,0x0,0x0]\np[1].fault = [0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0]\np[2].name = 3\np[2].fire = [0x0000,0x0000,0x0000,0x0000,0x0,0x0,0x0,0x0,0x0]\np[2].fault = [0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0]\np[3].name = 4\np[3].fire = [0x0000,0x0000,0x0000,0x0000,0x0,0x0,0x0,0x0,0x0]\np[3].fault = [0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0]\n\n[sector]\np[0].name = 1\np[0].index = 0\np[0].ch = 0\np[0].start = 10\np[0].end = 100\np[0].fire_enalbe = 1\np[0].fire_param_index = 0\np[0].prefile_enable = 0\np[0].prefile_param_index = 0\np[0].fault_enable = 1\np[1].name = 1\np[1].index = 1\np[1].ch = 0\np[1].start = 101\np[1].end = 200\np[1].fire_enalbe = 1\np[1].fire_param_index = 0\np[1].prefile_enable = 0\np[1].prefile_param_index = 0\np[1].fault_enable = 1\np[2].name = 2\np[2].index = 2\np[2].ch = 0\np[2].start = 201\np[2].end = 300\np[2].fire_enalbe = 1\np[2].fire_param_index = 0\np[2].prefile_enable = 0\np[2].prefile_param_index = 0\np[2].fault_enable = 1\np[3].name = 3\np[3].index = 3\np[3].ch = 0\np[3].start = 301\np[3].end = 400\np[3].fire_enalbe = 1\np[3].fire_param_index = 0\np[3].prefile_enable = 0\np[3].prefile_param_index = 0\np[3].fault_enable = 1\n\r\n"
+}

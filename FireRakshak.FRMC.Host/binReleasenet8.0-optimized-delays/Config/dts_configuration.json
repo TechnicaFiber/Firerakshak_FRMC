@@ -1,0 +1,5 @@
+{
+  "PulseWidth": 10,
+  "PumpCurrent": 60,
+  "ChannelLengths": [ 10, 20, 30, 40 ]
+}

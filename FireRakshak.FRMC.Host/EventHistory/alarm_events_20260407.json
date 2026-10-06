@@ -1,0 +1,96 @@
+[
+  {
+    "timestamp": "2026-04-07T12:48:28.2215698Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 51,
+    "breachPosition": 16.400000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 30.098039215686274,
+      "maxTemperature": 51,
+      "minTemperature": 25,
+      "maxTempPosition": 26.400000000000002,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-07T12:48:28.2215698Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "ZoneDeviation",
+    "isActive": true,
+    "triggerValue": 26,
+    "breachPosition": 16.400000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 30.098039215686274,
+      "maxTemperature": 51,
+      "minTemperature": 25,
+      "maxTempPosition": 26.400000000000002,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "Deviation"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-07T12:59:58.1580726Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 51,
+    "breachPosition": 16.400000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 30.098039215686274,
+      "maxTemperature": 51,
+      "minTemperature": 25,
+      "maxTempPosition": 26.400000000000002,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-07T12:59:58.1580726Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "ZoneDeviation",
+    "isActive": true,
+    "triggerValue": 26,
+    "breachPosition": 16.400000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 30.098039215686274,
+      "maxTemperature": 51,
+      "minTemperature": 25,
+      "maxTempPosition": 26.400000000000002,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "Deviation"
+      ]
+    }
+  }
+]

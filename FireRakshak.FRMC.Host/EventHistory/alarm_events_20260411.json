@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2026-04-11T09:54:00.7991676Z",
+    "channelId": 2,
+    "zoneId": 0,
+    "zoneName": "NA",
+    "alarmType": "FiberBreak",
+    "isActive": true,
+    "triggerValue": 30,
+    "breachPosition": 30,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 0,
+      "endPoint": 0,
+      "activeAlarms": []
+    }
+  }
+]

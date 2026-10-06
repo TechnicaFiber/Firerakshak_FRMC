@@ -1,0 +1,338 @@
+[
+  {
+    "RelayId": 1,
+    "IsOn": true,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.6193483Z",
+    "LastChangedBy": "System-Startup"
+  },
+  {
+    "RelayId": 2,
+    "IsOn": true,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:25:55.3367698Z",
+    "LastChangedBy": "System-Health-Fault"
+  },
+  {
+    "RelayId": 3,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4190262Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 4,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.421654Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 5,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4277254Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 6,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4306407Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 7,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.440729Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 8,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4433372Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 9,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4461358Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 10,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4490055Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 11,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.45165Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 12,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4550938Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 13,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4576823Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 14,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4603069Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 15,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4650963Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 16,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4680365Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 17,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4707073Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 18,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4736196Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 19,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4760773Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 20,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4791216Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 21,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4818668Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 22,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4856506Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 23,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4886442Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 24,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4915444Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 25,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4944688Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 26,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.4973184Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 27,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5001522Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 28,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5043203Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 29,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5072244Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 30,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5099682Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 31,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5127499Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 32,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5151001Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 33,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5177542Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 34,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5206454Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 35,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5237188Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 36,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.526192Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 37,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5288227Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 38,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5313255Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 39,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.534421Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 40,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5370794Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 41,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5398217Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 42,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5425548Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 43,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5451921Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 44,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5478018Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 45,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5503891Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 46,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5531041Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 47,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5559016Z",
+    "LastChangedBy": "System-Startup-Clear"
+  },
+  {
+    "RelayId": 48,
+    "IsOn": false,
+    "ControlSource": 0,
+    "LastStateChange": "2026-09-30T06:09:50.5589477Z",
+    "LastChangedBy": "System-Startup-Clear"
+  }
+]

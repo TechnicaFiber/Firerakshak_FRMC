@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util"
+     xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx">
+
+  <Package Name="Fire Rakshak FRMC"
+           Manufacturer="Fire Rakshak"
+           Version="1.0.0.0"
+           UpgradeCode="A1B2C3D4-E5F6-7890-ABCD-EF1234567890"
+           Scope="perMachine"
+           Language="1033"
+           Codepage="1252">
+
+    <SummaryInformation Description="Fire Rakshak FRMC Installation Package" />
+
+    <!-- Major upgrade to handle reinstalls -->
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed."
+                  Schedule="afterInstallInitialize" />
+
+    <!-- Include default WiX UI -->
+    <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLFOLDER" />
+
+    <!-- License agreement -->
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+
+    <!-- Media -->
+    <Media Id="1" Cabinet="frmc.cab" EmbedCab="yes" CompressionLevel="high" />
+
+    <!-- .NET 8 Runtime Check - Using registry detection -->
+    <Property Id="DOTNET8INSTALLED">
+      <RegistrySearch Id="DotNet8Search"
+                      Root="HKLM"
+                      Key="SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedhost"
+                      Name="Version"
+                      Type="raw" />
+    </Property>
+
+    <!-- Directory structure -->
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="MANUFACTURERFOLDER" Name="Fire Rakshak">
+        <Directory Id="INSTALLFOLDER" Name="FRMC">
+          <Directory Id="ConfigFolder" Name="Config" />
+          <Directory Id="AuditLogsFolder" Name="AuditLogs" />
+          <Directory Id="EventHistoryFolder" Name="EventHistory" />
+          <Directory Id="LogsFolder" Name="Logs" />
+        </Directory>
+      </Directory>
+    </StandardDirectory>
+
+    <!-- Program Menu shortcuts -->
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ApplicationProgramsFolder" Name="Fire Rakshak FRMC" />
+    </StandardDirectory>
+
+    <!-- Components -->
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+
+      <!-- Main executable with Windows Service -->
+      <Component Id="MainExecutable" Guid="11111111-1111-1111-1111-111111111111">
+        <File Id="FRMCExe" Source="publish\FireRakshak.FRMC.Host.exe" KeyPath="yes" />
+
+        <!-- Install as Windows Service with auto-restart on failure -->
+        <ServiceInstall Id="FRMCService"
+                        Name="FireRakshakFRMC"
+                        DisplayName="Fire Rakshak FRMC Service"
+                        Description="Fire Rakshak Fiber Optic Monitoring and Control Service. Provides DTS temperature monitoring, alarm management, and relay control."
+                        Type="ownProcess"
+                        Start="auto"
+                        ErrorControl="normal"
+                        Account="LocalSystem">
+          <!-- Service failure recovery actions -->
+          <util:ServiceConfig
+            FirstFailureActionType="restart"
+            SecondFailureActionType="restart"
+            ThirdFailureActionType="restart"
+            RestartServiceDelayInSeconds="30"
+            ResetPeriodInDays="1" />
+        </ServiceInstall>
+
+        <ServiceControl Id="FRMCServiceControl"
+                        Name="FireRakshakFRMC"
+                        Start="install"
+                        Stop="both"
+                        Remove="uninstall"
+                        Wait="yes" />
+      </Component>
+
+      <!-- Registry key for install path -->
+      <Component Id="RegistryEntries" Guid="11111111-1111-1111-1111-111111111114">
+        <RegistryKey Root="HKLM" Key="SOFTWARE\FireRakshak\FRMC">
+          <RegistryValue Type="string" Name="InstallPath" Value="[INSTALLFOLDER]" />
+          <RegistryValue Type="string" Name="Version" Value="1.0.0.0" />
+          <RegistryValue Type="integer" Name="installed" Value="1" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+
+      <!-- Core DLLs -->
+      <Component Id="CoreDll" Guid="22222222-2222-2222-2222-222222222222">
+        <File Source="publish\FireRakshak.FRMC.Core.dll" />
+      </Component>
+
+      <Component Id="HostDll" Guid="22222222-2222-2222-2222-222222222223">
+        <File Source="publish\FireRakshak.FRMC.Host.dll" />
+      </Component>
+
+      <Component Id="InfrastructureDll" Guid="22222222-2222-2222-2222-222222222224">
+        <File Source="publish\FireRakshak.FRMC.Infrastructure.dll" />
+      </Component>
+
+      <Component Id="ManagersDll" Guid="22222222-2222-2222-2222-222222222225">
+        <File Source="publish\FireRakshak.FRMC.Managers.dll" />
+      </Component>
+
+      <!-- Runtime config files -->
+      <Component Id="RuntimeConfig" Guid="33333333-3333-3333-3333-333333333333">
+        <File Source="publish\FireRakshak.FRMC.Host.deps.json" />
+        <File Source="publish\FireRakshak.FRMC.Host.runtimeconfig.json" />
+      </Component>
+
+      <!-- App settings -->
+      <Component Id="AppSettings" Guid="44444444-4444-4444-4444-444444444444">
+        <File Source="publish\appsettings.json" />
+        <File Id="AppSettingsDev" Source="publish\appsettings.Development.json" />
+        <File Source="publish\config.json" />
+        <File Source="publish\ethconfig.json" />
+        <File Source="publish\localhost.pfx" />
+      </Component>
+
+      <!-- Microsoft Extensions -->
+      <Component Id="MicrosoftExtensions" Guid="55555555-5555-5555-5555-555555555555">
+        <File Source="publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+        <File Source="publish\Microsoft.Extensions.DependencyInjection.dll" />
+        <File Source="publish\Microsoft.Extensions.DependencyModel.dll" />
+        <File Source="publish\Microsoft.Extensions.Hosting.WindowsServices.dll" />
+        <File Source="publish\Microsoft.Extensions.Logging.Abstractions.dll" />
+        <File Source="publish\Microsoft.Extensions.Logging.dll" />
+        <File Source="publish\Microsoft.Extensions.Options.dll" />
+        <File Source="publish\Microsoft.Extensions.Primitives.dll" />
+      </Component>
+
+      <!-- Identity Model -->
+      <Component Id="IdentityModel" Guid="66666666-6666-6666-6666-666666666666">
+        <File Source="publish\Microsoft.IdentityModel.Abstractions.dll" />
+        <File Source="publish\Microsoft.IdentityModel.JsonWebTokens.dll" />
+        <File Source="publish\Microsoft.IdentityModel.Logging.dll" />
+        <File Source="publish\Microsoft.IdentityModel.Tokens.dll" />
+        <File Source="publish\System.IdentityModel.Tokens.Jwt.dll" />
+      </Component>
+
+      <!-- Third party libraries -->
+      <Component Id="ThirdPartyLibs" Guid="77777777-7777-7777-7777-777777777777">
+        <File Source="publish\Newtonsoft.Json.dll" />
+        <File Source="publish\NModbus.dll" />
+      </Component>
+
+      <!-- Serilog -->
+      <Component Id="SerilogLibs" Guid="88888888-8888-8888-8888-888888888888">
+        <File Source="publish\Serilog.dll" />
+        <File Source="publish\Serilog.AspNetCore.dll" />
+        <File Source="publish\Serilog.Extensions.Hosting.dll" />
+        <File Source="publish\Serilog.Extensions.Logging.dll" />
+        <File Source="publish\Serilog.Formatting.Compact.dll" />
+        <File Source="publish\Serilog.Settings.Configuration.dll" />
+        <File Source="publish\Serilog.Sinks.Console.dll" />
+        <File Source="publish\Serilog.Sinks.Debug.dll" />
+        <File Source="publish\Serilog.Sinks.File.dll" />
+      </Component>
+
+      <!-- System libraries -->
+      <Component Id="SystemLibs" Guid="99999999-9999-9999-9999-999999999999">
+        <File Source="publish\System.Configuration.ConfigurationManager.dll" />
+        <File Source="publish\System.Diagnostics.DiagnosticSource.dll" />
+        <File Source="publish\System.Diagnostics.EventLog.dll" />
+        <File Source="publish\System.Diagnostics.EventLog.Messages.dll" />
+        <File Source="publish\System.Diagnostics.PerformanceCounter.dll" />
+        <File Source="publish\System.IO.Ports.dll" />
+        <File Source="publish\System.Security.Cryptography.ProtectedData.dll" />
+        <File Source="publish\System.ServiceProcess.ServiceController.dll" />
+        <File Source="publish\System.Threading.AccessControl.dll" />
+      </Component>
+
+    </ComponentGroup>
+
+    <!-- Config folder with default files -->
+    <ComponentGroup Id="ConfigComponents" Directory="ConfigFolder">
+      <Component Id="ConfigPlaceholder" Guid="AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA">
+        <CreateFolder />
+      </Component>
+      <Component Id="ConfigFiles" Guid="AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAB">
+        <File Id="SystemConfig" Source="publish\Config\system_config.json" />
+        <File Id="RelayStates" Source="publish\Config\relay_states.json" />
+        <File Id="DtsConfig" Source="publish\Config\dts_configuration.json" />
+        <File Id="SystemConfigs" Source="publish\Config\system_configurations.json" />
+        <File Id="UsersConfig" Source="publish\Config\users.json" />
+      </Component>
+    </ComponentGroup>
+
+    <!-- AuditLogs folder placeholder -->
+    <ComponentGroup Id="AuditLogsComponents" Directory="AuditLogsFolder">
+      <Component Id="AuditLogsPlaceholder" Guid="BBBBBBBB-BBBB-BBBB-BBBB-BBBBBBBBBBBB">
+        <CreateFolder />
+      </Component>
+    </ComponentGroup>
+
+    <!-- EventHistory folder placeholder -->
+    <ComponentGroup Id="EventHistoryComponents" Directory="EventHistoryFolder">
+      <Component Id="EventHistoryPlaceholder" Guid="CCCCCCCC-CCCC-CCCC-CCCC-CCCCCCCCCCCC">
+        <CreateFolder />
+      </Component>
+    </ComponentGroup>
+
+    <!-- Logs folder placeholder -->
+    <ComponentGroup Id="LogsComponents" Directory="LogsFolder">
+      <Component Id="LogsPlaceholder" Guid="CCCCCCCC-CCCC-CCCC-CCCC-CCCCCCCCCCCD">
+        <CreateFolder />
+      </Component>
+    </ComponentGroup>
+
+    <!-- Shortcuts -->
+    <ComponentGroup Id="ShortcutComponents" Directory="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD">
+        <Shortcut Id="FRMCShortcut"
+                  Name="Fire Rakshak FRMC"
+                  Description="Fire Rakshak FRMC Application"
+                  Target="[INSTALLFOLDER]FireRakshak.FRMC.Host.exe"
+                  WorkingDirectory="INSTALLFOLDER" />
+        <Shortcut Id="FRMCServiceManager"
+                  Name="FRMC Service Manager"
+                  Description="Open Windows Services to manage FRMC"
+                  Target="[System64Folder]services.msc" />
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\FireRakshak\FRMC" Name="shortcut_installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+
+    <!-- Feature -->
+    <Feature Id="ProductFeature" Title="Fire Rakshak FRMC" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="ConfigComponents" />
+      <ComponentGroupRef Id="AuditLogsComponents" />
+      <ComponentGroupRef Id="EventHistoryComponents" />
+      <ComponentGroupRef Id="LogsComponents" />
+      <ComponentGroupRef Id="ShortcutComponents" />
+    </Feature>
+
+  </Package>
+</Wix>

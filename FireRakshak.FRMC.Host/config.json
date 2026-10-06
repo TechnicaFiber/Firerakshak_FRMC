@@ -1,0 +1,16 @@
+{
+  "DeviceId": "FRMC01",
+  "IpAddress": "192.168.0.101",
+  "Port": 5000,
+  "IsClockSyncEnabled": true,
+  "LastUpdated": "2026-01-17T07:00:22.497589Z",
+  "AdditionalSettings": {},
+  "SubnetMask": "255.255.255.0",
+  "Gateway": "192.168.1.1",
+  "SoftwareVersion": "4.0.0",
+  "BackgroundServiceInterval": 5000,
+  "CurrentIP": "192.168.0.101",
+  "UseSecure": true,
+  "CertificatePath": "localhost.pfx",
+  "CertificatePassword": "FRMC@123"
+}

@@ -1,0 +1,400 @@
+[
+  {
+    "configuration": {
+      "channelId": 1,
+      "name": "",
+      "channelLength": 1111,
+      "correctionLength": 20,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 3,
+      "state": "",
+      "length": 1111,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 1,
+          "zoneId": 1,
+          "name": "Zone 4",
+          "startPoint": 30,
+          "endPoint": 90,
+          "maxTemp": 100,
+          "minTemp": 10,
+          "preAlarm": 78,
+          "roRThreshold": 1,
+          "deviationThreshold": 1,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      },
+      {
+        "configuration": {
+          "channelId": 1,
+          "zoneId": 2,
+          "name": "Zone 5",
+          "startPoint": 0,
+          "endPoint": 0,
+          "maxTemp": 0,
+          "minTemp": 0,
+          "preAlarm": 0,
+          "roRThreshold": 0,
+          "deviationThreshold": 0,
+          "enabled": false,
+          "isMaxTempEnabled": false,
+          "isMinTempEnabled": false,
+          "isPreAlarmEnabled": false,
+          "isRateOfRiseEnabled": false,
+          "isDeviationEnabled": false,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      },
+      {
+        "configuration": {
+          "channelId": 1,
+          "zoneId": 3,
+          "name": "Zone 6",
+          "startPoint": 0,
+          "endPoint": 0,
+          "maxTemp": 0,
+          "minTemp": 0,
+          "preAlarm": 0,
+          "roRThreshold": 0,
+          "deviationThreshold": 0,
+          "enabled": false,
+          "isMaxTempEnabled": false,
+          "isMinTempEnabled": false,
+          "isPreAlarmEnabled": false,
+          "isRateOfRiseEnabled": false,
+          "isDeviationEnabled": false,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 2,
+      "name": "",
+      "channelLength": 2222,
+      "correctionLength": 10,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 0,
+      "state": "",
+      "length": 2222,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 2,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 12,
+          "endPoint": 20,
+          "maxTemp": 88,
+          "minTemp": 44,
+          "preAlarm": 55,
+          "roRThreshold": 1,
+          "deviationThreshold": 2,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 3,
+      "name": "Channel 3",
+      "channelLength": 3333,
+      "correctionLength": 30,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 3333,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 3,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 30,
+          "endPoint": 40,
+          "maxTemp": 100,
+          "minTemp": 20,
+          "preAlarm": 80,
+          "roRThreshold": 2,
+          "deviationThreshold": 2,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 4,
+      "name": "Channel 4",
+      "channelLength": 4444,
+      "correctionLength": 14,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 4444,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 4,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 40,
+          "endPoint": 50,
+          "maxTemp": 110,
+          "minTemp": 40,
+          "preAlarm": 90,
+          "roRThreshold": 1,
+          "deviationThreshold": 1,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 5,
+      "name": "Channel 5",
+      "channelLength": 5555,
+      "correctionLength": 15,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 5555,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 5,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 36,
+          "endPoint": 49,
+          "maxTemp": 77,
+          "minTemp": 44,
+          "preAlarm": 66,
+          "roRThreshold": 2,
+          "deviationThreshold": 2,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 6,
+      "name": "Channel 6",
+      "channelLength": 6666,
+      "correctionLength": 16,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 6666,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 6,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 55,
+          "endPoint": 88,
+          "maxTemp": 10,
+          "minTemp": 0,
+          "preAlarm": 9,
+          "roRThreshold": 1,
+          "deviationThreshold": 1,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 7,
+      "name": "Channel 7",
+      "channelLength": 7777,
+      "correctionLength": 17,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 7777,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 7,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 22,
+          "endPoint": 40,
+          "maxTemp": 50,
+          "minTemp": 10,
+          "preAlarm": 40,
+          "roRThreshold": 2,
+          "deviationThreshold": 2,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  },
+  {
+    "configuration": {
+      "channelId": 8,
+      "name": "Channel 8",
+      "channelLength": 8888,
+      "correctionLength": 18,
+      "isEnabled": true,
+      "scanPeriod": 60,
+      "numberOfZones": 1,
+      "state": "",
+      "length": 8888,
+      "frequencyOfScanningSeconds": 60
+    },
+    "zones": [
+      {
+        "configuration": {
+          "channelId": 8,
+          "zoneId": 1,
+          "name": "Zone 1",
+          "startPoint": 44,
+          "endPoint": 60,
+          "maxTemp": 89,
+          "minTemp": 67,
+          "preAlarm": 80,
+          "roRThreshold": 2,
+          "deviationThreshold": 2,
+          "enabled": true,
+          "isMaxTempEnabled": true,
+          "isMinTempEnabled": true,
+          "isPreAlarmEnabled": true,
+          "isRateOfRiseEnabled": true,
+          "isDeviationEnabled": true,
+          "assignedRelayId": null,
+          "relayTriggerOnMaxTemp": true,
+          "relayTriggerOnMinTemp": true,
+          "relayTriggerOnPreAlarm": false,
+          "relayTriggerOnRateOfRise": true,
+          "relayTriggerOnDeviation": true,
+          "relayTriggerOnFiberBreak": true
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2025-12-27T07:11:09.0570882Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-27T07:11:09.0570882Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-27T07:13:06.3362883Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-27T07:11:09.0570882Z",
+    "clearedAt": "2025-12-27T07:13:06.3362883Z"
+  },
+  {
+    "timestamp": "2025-12-27T07:25:29.5765579Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-27T07:25:29.5765579Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-27T07:27:21.4512387Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-27T07:25:29.5765579Z",
+    "clearedAt": "2025-12-27T07:27:21.4512387Z"
+  },
+  {
+    "timestamp": "2025-12-27T07:30:46.5965453Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 95.17989349365234,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 95.2%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-27T07:30:46.5965453Z",
+    "clearedAt": null
+  }
+]

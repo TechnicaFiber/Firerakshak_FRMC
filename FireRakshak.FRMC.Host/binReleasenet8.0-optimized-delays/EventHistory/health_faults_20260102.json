@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2026-01-02T10:14:18.2962932Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2026-01-02T10:14:18.2962932Z",
+    "clearedAt": null
+  }
+]

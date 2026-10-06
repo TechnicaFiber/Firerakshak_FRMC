@@ -1,0 +1,1692 @@
+[
+  {
+    "timestamp": "2026-04-21T06:05:35.748342Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 33.28834930743201,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:05:35.748342Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.28834930743201,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 33.28834930743201,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:07:05.8414851Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:07:48.3294761Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 33.02822616428699,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:07:48.3294761Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.02822616428699,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 33.02822616428699,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:09:48.453704Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 44.3994663872332,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:09:48.453704Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 44.3994663872332,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 44.3994663872332,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:21:35.8106674Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 32.49718403776017,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:21:46.388757Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 32.49718403776017,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 32.49718403776017,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:22:31.2265755Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:22:49.233187Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 6.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 6.4,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:23:49.2740933Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:24:07.2987178Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.30165094433131,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 33.30165094433131,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:24:37.3157678Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 33.300754465223235,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:24:37.3157678Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.300754465223235,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 33.300754465223235,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:25:07.3332486Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:25:25.3555108Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.30438158772,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 33.30438158772,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:25:37.3703972Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.3026427278834,
+    "breachPosition": 5.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 5.2,
+      "rateOfRise": 33.3026427278834,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:27:55.5453751Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 12.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 12.4,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:28:19.5634209Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.300605375035175,
+    "breachPosition": 12.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 12.4,
+      "rateOfRise": 33.300605375035175,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:33:32.9533504Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 13.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 13.200000000000001,
+      "rateOfRise": 33.31139229129856,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:33:32.9533504Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.31139229129856,
+    "breachPosition": 13.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 13.200000000000001,
+      "rateOfRise": 33.31139229129856,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:38:09.3013122Z",
+    "channelId": 2,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 1.2000000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 1.2000000000000002,
+      "rateOfRise": 33.2925683097194,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:38:09.3013122Z",
+    "channelId": 2,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.2925683097194,
+    "breachPosition": 1.2000000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 1.2000000000000002,
+      "rateOfRise": 33.2925683097194,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:39:15.3817159Z",
+    "channelId": 2,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 1.2000000000000002,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 1.2000000000000002,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:39:51.3448685Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 4.800000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 4.800000000000001,
+      "rateOfRise": 44.42081676522471,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:39:51.3448685Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 44.42081676522471,
+    "breachPosition": 4.800000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 4.800000000000001,
+      "rateOfRise": 44.42081676522471,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:40:51.43316Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 60,
+    "breachPosition": 6.800000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.460526315789473,
+      "maxTemperature": 60,
+      "minTemperature": 25,
+      "maxTempPosition": 6.800000000000001,
+      "rateOfRise": -5.546540650051939,
+      "deviation": 35,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T06:41:27.4527006Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 38.84665480578404,
+    "breachPosition": 6.800000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.460526315789473,
+      "maxTemperature": 60,
+      "minTemperature": 25,
+      "maxTempPosition": 6.800000000000001,
+      "rateOfRise": 38.84665480578404,
+      "deviation": 35,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:15:38.3128044Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 66,
+    "breachPosition": 6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.539473684210527,
+      "maxTemperature": 66,
+      "minTemperature": 25,
+      "maxTempPosition": 6,
+      "rateOfRise": 51.20857642237114,
+      "deviation": 41,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:15:38.3128044Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 51.20857642237114,
+    "breachPosition": 6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.539473684210527,
+      "maxTemperature": 66,
+      "minTemperature": 25,
+      "maxTempPosition": 6,
+      "rateOfRise": 51.20857642237114,
+      "deviation": 41,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:16:26.3637913Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 66,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.539473684210527,
+      "maxTemperature": 66,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 45.507361658374386,
+      "deviation": 41,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:16:26.3637913Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 45.507361658374386,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.539473684210527,
+      "maxTemperature": 66,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 45.507361658374386,
+      "deviation": 41,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:17:02.3864167Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 45.51418282622443,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.539473684210527,
+      "maxTemperature": 66,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 45.51418282622443,
+      "deviation": 41,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:17:20.4106731Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 15.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 15.200000000000001,
+      "rateOfRise": -12.211620319601861,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:18:02.4466619Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.29051624267498,
+    "breachPosition": 15.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 15.200000000000001,
+      "rateOfRise": 33.29051624267498,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:18:08.4486989Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 15.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 15.200000000000001,
+      "rateOfRise": 33.29794526371284,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:18:08.4486989Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.29794526371284,
+    "breachPosition": 15.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 15.200000000000001,
+      "rateOfRise": 33.29794526371284,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:18:32.4664985Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 9.600000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.600000000000001,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:19:14.5133752Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 38.848113980396015,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.855263157894736,
+      "maxTemperature": 60,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 38.848113980396015,
+      "deviation": 35,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:19:38.5219864Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 11.103237949012328,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:19:38.5219864Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 11.103237949012328,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 11.103237949012328,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:58:13.0913966Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 0,
+      "deviation": 40,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:58:25.1056072Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MinTemperature",
+    "isActive": true,
+    "triggerValue": -1,
+    "breachPosition": 10.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 24.657894736842106,
+      "maxTemperature": 25,
+      "minTemperature": -1,
+      "maxTempPosition": 0,
+      "rateOfRise": -199.76343680874047,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MinTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T08:59:42.320225Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MinTemperature",
+    "isActive": true,
+    "triggerValue": -1,
+    "breachPosition": 10.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 24.657894736842106,
+      "maxTemperature": 25,
+      "minTemperature": -1,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MinTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:02:27.1473147Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MinTemperature",
+    "isActive": true,
+    "triggerValue": -1,
+    "breachPosition": 10.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 24.657894736842106,
+      "maxTemperature": 25,
+      "minTemperature": -1,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MinTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:18:11.3036549Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MinTemperature",
+    "isActive": true,
+    "triggerValue": -1,
+    "breachPosition": 10.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 24.657894736842106,
+      "maxTemperature": 25,
+      "minTemperature": -1,
+      "maxTempPosition": 0,
+      "rateOfRise": 0,
+      "deviation": 26,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MinTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:27:23.7936826Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.31859146084039,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:27:23.7936826Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.31859146084039,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.31859146084039,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:27:41.8024902Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.32092967896576,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:27:41.8024902Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.32092967896576,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.32092967896576,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:28:11.8395649Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.30407329964542,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:28:11.8395649Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.30407329964542,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 33.30407329964542,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:52:42.3223518Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 49.98042252966063,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T09:52:42.3223518Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 49.98042252966063,
+    "breachPosition": 7.2,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 7.2,
+      "rateOfRise": 49.98042252966063,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:20:52.3205891Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 56,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.407894736842106,
+      "maxTemperature": 56,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 103.3791481001283,
+      "deviation": 31,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:20:52.3205891Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 103.3791481001283,
+    "breachPosition": 9.200000000000001,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.407894736842106,
+      "maxTemperature": 56,
+      "minTemperature": 25,
+      "maxTempPosition": 9.200000000000001,
+      "rateOfRise": 103.3791481001283,
+      "deviation": 31,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:26:39.9187561Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 37.47830271743971,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:26:39.9187561Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 37.47830271743971,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 37.47830271743971,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:31:47.0781802Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 59.971570876636406,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:31:47.0781802Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 59.971570876636406,
+    "breachPosition": 8,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8,
+      "rateOfRise": 59.971570876636406,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:10:19.8307877Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 33.30034496326853,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:10:19.8307877Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 33.30034496326853,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 33.30034496326853,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:10:25.8313893Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 79.9097525890843,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:10:25.8313893Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "RateOfRise",
+    "isActive": true,
+    "triggerValue": 79.9097525890843,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 79.9097525890843,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:10:25.8313893Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "ZoneDeviation",
+    "isActive": true,
+    "triggerValue": 40,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 79.9097525890843,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature",
+        "RateOfRise",
+        "Deviation"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:30:08.8661221Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:30:08.8661221Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 0,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:30:08.8661221Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "ZoneDeviation",
+    "isActive": true,
+    "triggerValue": 40,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 0,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature",
+        "Deviation"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:44:28.0264347Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 55,
+    "breachPosition": 8.4,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.394736842105264,
+      "maxTemperature": 55,
+      "minTemperature": 25,
+      "maxTempPosition": 8.4,
+      "rateOfRise": 0,
+      "deviation": 30,
+      "startPoint": 0,
+      "endPoint": 30,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:44:28.0264347Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "MaxTemperature",
+    "isActive": true,
+    "triggerValue": 65,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 0,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-21T11:44:28.0264347Z",
+    "channelId": 1,
+    "zoneId": 2,
+    "zoneName": "Zone 2",
+    "alarmType": "ZoneDeviation",
+    "isActive": true,
+    "triggerValue": 40,
+    "breachPosition": 33.6,
+    "zoneStateSnapshot": {
+      "averageTemperature": 25.526315789473685,
+      "maxTemperature": 65,
+      "minTemperature": 25,
+      "maxTempPosition": 33.6,
+      "rateOfRise": 0,
+      "deviation": 40,
+      "startPoint": 30,
+      "endPoint": 60,
+      "activeAlarms": [
+        "MaxTemperature",
+        "Deviation"
+      ]
+    }
+  }
+]

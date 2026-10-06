@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2026-04-21T07:58:10.1334556Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 21.0749233,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 21 seconds",
+    "details": "Last communication: 2026-04-21 07:57:48",
+    "firstDetectedAt": "2026-04-21T07:58:10.0605826Z",
+    "clearedAt": "2026-04-21T07:58:10.1334556Z"
+  }
+]

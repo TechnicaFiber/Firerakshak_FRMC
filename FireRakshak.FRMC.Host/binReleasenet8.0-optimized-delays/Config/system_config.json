@@ -1,0 +1,15 @@
+{
+  "ipAddress": "",
+  "subnetMask": "",
+  "gateway": "",
+  "systemTime": "0001-01-01T00:00:00",
+  "softwareVersion": "",
+  "backgroundServiceInterval": 0,
+  "numberOfRelays": 48,
+  "maxZonesPerChannel": 20,
+  "dtsPollingInterval": 7000,
+  "alarmEvaluationInterval": 7000,
+  "alarmStatusBroadcastInterval": 7000,
+  "healthStatusBroadcastInterval": 30000,
+  "autoAlarmClearTimeout": 30
+}

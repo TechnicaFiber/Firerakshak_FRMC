@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": "2026-02-12T11:18:53.9342532Z",
+    "channelId": 1,
+    "zoneId": 1,
+    "zoneName": "Zone 1",
+    "alarmType": "MinTemperature",
+    "isActive": true,
+    "triggerValue": 0,
+    "breachPosition": -40,
+    "zoneStateSnapshot": {
+      "averageTemperature": 0,
+      "maxTemperature": 0,
+      "minTemperature": 0,
+      "maxTempPosition": 10,
+      "rateOfRise": 0,
+      "deviation": 0,
+      "startPoint": 10,
+      "endPoint": 100,
+      "activeAlarms": [
+        "MinTemperature"
+      ]
+    }
+  }
+]

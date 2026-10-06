@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2025-12-28T19:45:15.964405Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-28T19:45:15.964405Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-28T19:47:13.0497331Z",
+    "faultId": 2,
+    "faultType": "CpuLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 100,
+    "thresholdValue": 90,
+    "description": "CPU load is high: 100.0%",
+    "details": "Threshold: 90%",
+    "firstDetectedAt": "2025-12-28T19:45:15.964405Z",
+    "clearedAt": "2025-12-28T19:47:13.0497331Z"
+  }
+]

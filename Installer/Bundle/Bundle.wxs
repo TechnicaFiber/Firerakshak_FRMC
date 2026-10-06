@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util"
+     xmlns:netfx="http://wixtoolset.org/schemas/v4/wxs/netfx">
+
+  <!-- Search for .NET 8 Desktop Runtime (x64) -->
+  <Fragment>
+    <netfx:DotNetCoreSearch RuntimeType="desktop" MajorVersion="8" Platform="x64" Variable="DOTNET8DESKTOP_INSTALLED" />
+  </Fragment>
+
+  <Bundle Name="Fire Rakshak FRMC Setup"
+          Manufacturer="Fire Rakshak"
+          Version="1.0.0.0"
+          UpgradeCode="F1B2C3D4-E5F6-7890-ABCD-EF1234567890"
+          AboutUrl="https://firerakshak.com"
+          HelpUrl="https://firerakshak.com/support"
+          UpdateUrl="https://firerakshak.com/updates"
+          DisableModify="yes"
+          DisableRemove="no">
+
+    <!-- Splash screen and branding -->
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication
+        Theme="hyperlinkLicense"
+        LicenseUrl="https://firerakshak.com/license"
+        ShowVersion="yes"
+        SuppressOptionsUI="yes" />
+    </BootstrapperApplication>
+
+    <!-- Installation Chain -->
+    <Chain DisableSystemRestore="no" ParallelCache="yes">
+
+      <!-- =================================================== -->
+      <!-- .NET 8 Desktop Runtime (x64) - Auto-download if needed -->
+      <!-- =================================================== -->
+      <ExePackage
+        Id="DotNet8DesktopRuntime"
+        Cache="remove"
+        PerMachine="yes"
+        Permanent="yes"
+        Vital="yes"
+        InstallArguments="/install /quiet /norestart"
+        RepairArguments="/repair /quiet /norestart"
+        UninstallArguments="/uninstall /quiet /norestart"
+        DetectCondition="DOTNET8DESKTOP_INSTALLED"
+        InstallCondition="NOT DOTNET8DESKTOP_INSTALLED">
+
+        <!-- Download from Microsoft CDN - .NET 8.0.11 Desktop Runtime -->
+        <ExePackagePayload
+          Name="windowsdesktop-runtime-8.0.11-win-x64.exe"
+          DownloadUrl="https://download.visualstudio.microsoft.com/download/pr/513d13b7-b456-45af-828b-b7b7981ff462/edf44a743f4dc1691639a1a4af89e89c/windowsdesktop-runtime-8.0.11-win-x64.exe"
+          Size="59687552"
+          Hash="E59FF0E6E9FF7B85C234F05F234A7FCBB9C5AE5C06E87A1CB8BA8AAE2DABE9D5" />
+      </ExePackage>
+
+      <!-- =================================================== -->
+      <!-- Alternative: .NET 8 ASP.NET Core Runtime (for web features) -->
+      <!-- Uncomment if needed for additional web functionality -->
+      <!-- =================================================== -->
+      <!--
+      <ExePackage
+        Id="AspNetCoreRuntime"
+        Name="ASP.NET Core 8 Runtime (x64)"
+        Cache="remove"
+        PerMachine="yes"
+        Permanent="yes"
+        Vital="no"
+        InstallArguments="/install /quiet /norestart"
+        DetectCondition="ASPNETCORE8_INSTALLED"
+        InstallCondition="NOT ASPNETCORE8_INSTALLED">
+        <ExePackagePayload
+          Name="aspnetcore-runtime-8.0.11-win-x64.exe"
+          DownloadUrl="https://download.visualstudio.microsoft.com/download/pr/..." />
+      </ExePackage>
+      -->
+
+      <!-- =================================================== -->
+      <!-- Visual C++ Redistributable (if needed for native deps) -->
+      <!-- =================================================== -->
+      <!--
+      <ExePackage
+        Id="VCRedist"
+        Name="Visual C++ 2015-2022 Redistributable (x64)"
+        Cache="remove"
+        PerMachine="yes"
+        Permanent="yes"
+        Vital="no"
+        InstallArguments="/install /quiet /norestart"
+        DetectCondition="VCREDIST_INSTALLED">
+        <ExePackagePayload
+          Name="vc_redist.x64.exe"
+          DownloadUrl="https://aka.ms/vs/17/release/vc_redist.x64.exe" />
+      </ExePackage>
+      -->
+
+      <!-- =================================================== -->
+      <!-- Main FRMC MSI Package -->
+      <!-- =================================================== -->
+      <MsiPackage
+        Id="FRMCMsi"
+        Name="Fire Rakshak FRMC"
+        SourceFile="$(var.FRMC.Installer.TargetPath)"
+        Vital="yes"
+        EnableFeatureSelection="no"
+        Visible="yes">
+
+        <!-- Pass install directory to MSI if customized -->
+        <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]" />
+      </MsiPackage>
+
+    </Chain>
+
+    <!-- Variables for customization -->
+    <Variable Name="InstallFolder" Type="string" Value="[ProgramFiles64Folder]Fire Rakshak\FRMC" />
+
+  </Bundle>
+</Wix>

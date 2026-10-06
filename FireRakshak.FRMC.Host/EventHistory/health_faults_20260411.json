@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-04-11T09:51:37.915588Z",
+    "faultId": 2,
+    "faultType": "MemoryLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 91.09370081317405,
+    "thresholdValue": 90,
+    "description": "System memory load is high: 91.1% (avg of 2 samples)",
+    "details": "Current: 91.1%, Used: 14.4 GB / 15.9 GB",
+    "firstDetectedAt": "2026-04-11T09:51:37.915588Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-04-11T10:03:35.5377535Z",
+    "faultId": 2,
+    "faultType": "MemoryLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 90.45414331771549,
+    "thresholdValue": 90,
+    "description": "System memory load is high: 91.1% (avg of 2 samples)",
+    "details": "Current: 91.1%, Used: 14.4 GB / 15.9 GB",
+    "firstDetectedAt": "2026-04-11T09:51:37.915588Z",
+    "clearedAt": "2026-04-11T10:03:35.5377535Z"
+  }
+]

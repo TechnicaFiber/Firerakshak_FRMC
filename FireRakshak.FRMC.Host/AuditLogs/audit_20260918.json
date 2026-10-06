@@ -1,0 +1,8 @@
+{"Timestamp":"2026-09-18T07:03:29.9433709Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogTotalQuotaMB","OldValue":10240,"NewValue":10540}
+{"Timestamp":"2026-09-18T07:03:46.4872395Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogTotalQuotaMB","OldValue":10540,"NewValue":10040}
+{"Timestamp":"2026-09-18T07:04:17.3966079Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"MinimumLogLevel","OldValue":"Information","NewValue":"Debug"}
+{"Timestamp":"2026-09-18T07:08:05.4968761Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogCheckIntervalHours","OldValue":12,"NewValue":6}
+{"Timestamp":"2026-09-18T07:12:31.6949954Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogCheckIntervalHours","OldValue":6,"NewValue":12}
+{"Timestamp":"2026-09-18T07:12:50.8142332Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogTotalQuotaMB","OldValue":10040,"NewValue":10240}
+{"Timestamp":"2026-09-18T07:18:25.9359754Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogTotalQuotaMB","OldValue":10240,"NewValue":10640}
+{"Timestamp":"2026-09-18T07:18:37.7386417Z","ChangedBy":"admin1","ConfigurationType":"System","Key":"LogTotalQuotaMB","OldValue":10640,"NewValue":10240}

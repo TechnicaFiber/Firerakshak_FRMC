@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2025-12-24T08:35:07.4369394Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 319.3331107,
+    "thresholdValue": 30,
+    "description": "DTS communication lost for 319 seconds",
+    "details": "Last communication: 2025-12-24 08:29:47",
+    "firstDetectedAt": "2025-12-24T08:35:07.4369394Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-24T10:05:35.759103Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 884.621419,
+    "thresholdValue": 30,
+    "description": "DTS communication lost for 885 seconds",
+    "details": "Last communication: 2025-12-24 09:50:51",
+    "firstDetectedAt": "2025-12-24T10:05:35.759103Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-24T10:46:01.7069805Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 128.2024762,
+    "thresholdValue": 30,
+    "description": "DTS communication lost for 128 seconds",
+    "details": "Last communication: 2025-12-24 10:43:53",
+    "firstDetectedAt": "2025-12-24T10:46:01.7069805Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-24T11:56:46.4353925Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 41.1592434,
+    "thresholdValue": 30,
+    "description": "DTS communication lost for 41 seconds",
+    "details": "Last communication: 2025-12-24 11:56:03",
+    "firstDetectedAt": "2025-12-24T11:56:46.4353925Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2025-12-24T11:58:43.5061834Z",
+    "faultId": 2,
+    "faultType": "DtsCommunicationLost",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 41.1592434,
+    "thresholdValue": 30,
+    "description": "DTS communication lost for 41 seconds",
+    "details": "Last communication: 2025-12-24 11:56:03",
+    "firstDetectedAt": "2025-12-24T11:56:46.4353925Z",
+    "clearedAt": "2025-12-24T11:58:43.5061834Z"
+  }
+]

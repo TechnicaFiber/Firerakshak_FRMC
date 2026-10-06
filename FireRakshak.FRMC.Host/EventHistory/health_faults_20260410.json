@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2026-04-10T04:41:21.9440901Z",
+    "faultId": 3,
+    "faultType": "MemoryLoadHigh",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 95.49501621630988,
+    "thresholdValue": 90,
+    "description": "System memory load is high: 95.5% (avg of 2 samples)",
+    "details": "Current: 95.5%, Used: 15.1 GB / 15.9 GB",
+    "firstDetectedAt": "2026-04-10T04:41:21.9440901Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-04-10T04:49:16.1372733Z",
+    "faultId": 3,
+    "faultType": "MemoryLoadHigh",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 90.29950354698687,
+    "thresholdValue": 90,
+    "description": "System memory load is high: 95.5% (avg of 2 samples)",
+    "details": "Current: 95.5%, Used: 15.1 GB / 15.9 GB",
+    "firstDetectedAt": "2026-04-10T04:41:21.9440901Z",
+    "clearedAt": "2026-04-10T04:49:16.1372733Z"
+  },
+  {
+    "timestamp": "2026-04-10T12:36:35.8485288Z",
+    "faultId": 4,
+    "faultType": "DtsCommunicationLost",
+    "isActive": true,
+    "isNewFault": true,
+    "currentValue": 1497.0012144,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 1497 seconds",
+    "details": "Last communication: 2026-04-10 12:11:38",
+    "firstDetectedAt": "2026-04-10T12:36:35.8485288Z",
+    "clearedAt": null
+  },
+  {
+    "timestamp": "2026-04-10T12:36:37.6595607Z",
+    "faultId": 4,
+    "faultType": "DtsCommunicationLost",
+    "isActive": false,
+    "isNewFault": false,
+    "currentValue": 1497.0012144,
+    "thresholdValue": 10,
+    "description": "DTS communication lost for 1497 seconds",
+    "details": "Last communication: 2026-04-10 12:11:38",
+    "firstDetectedAt": "2026-04-10T12:36:35.8485288Z",
+    "clearedAt": "2026-04-10T12:36:37.6595607Z"
+  }
+]
