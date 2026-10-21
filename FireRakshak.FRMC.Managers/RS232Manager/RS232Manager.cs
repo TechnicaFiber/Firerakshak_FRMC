@@ -843,13 +843,13 @@ namespace FireRakshak.FRMC.Managers.RS232Manager
             SendSimpleAck(CMD_SHUTDOWN);
 
 #if WINDOWS
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = "shutdown",
-                Arguments = "/s /f /t 0",
-                CreateNoWindow = true,
-                UseShellExecute = false
-            });
+    Process.Start(new ProcessStartInfo
+    {
+        FileName = "shutdown",
+        Arguments = "/s /f /t 0",
+        CreateNoWindow = true,
+        UseShellExecute = false
+    });
 #else
             Process.Start(new ProcessStartInfo
             {

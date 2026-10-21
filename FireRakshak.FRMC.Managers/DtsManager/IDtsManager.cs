@@ -86,4 +86,15 @@ public interface IDtsManager
     /// <param name="iniPayload">The full ASCII INI configuration text.</param>
     /// <returns>A tuple containing success status and error message if any.</returns>
     Task<(bool Success, string? ErrorMessage)> WriteConfigurationIniAsync(string iniPayload);
+
+    /// <summary>
+    /// Asynchronously performs the complete DTS calibration write-and-readback transaction:
+    /// builds and transmits CMD 0x01 WRITE with the complete ASCII INI, optionally transmits CMD 0x23 to trigger
+    /// hardware coefficient calculation for the specified channel, and issues CMD 0x02 READ query to retrieve
+    /// and persist the updated configuration with DTS-calculated coefficients.
+    /// </summary>
+    /// <param name="iniPayload">The full ASCII INI configuration text.</param>
+    /// <param name="channelIndex">Optional 0-based channel index to trigger CMD 0x23 calibration calculation.</param>
+    /// <returns>A tuple containing success status, updated ASCII INI payload, and error message if any.</returns>
+    Task<(bool Success, string? IniPayload, string? ErrorMessage)> ApplyCalibrationAndReadBackAsync(string iniPayload, byte? channelIndex = null);
 }

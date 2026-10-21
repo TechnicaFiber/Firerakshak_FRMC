@@ -10,7 +10,7 @@
 
     <!-- Preprocessor Macro: Uncomment to build for WSS (Secure), comment out to build for WS (Unsecure) -->
     <DefineConstants>$(DefineConstants);USE_SECURE</DefineConstants>
-	  <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
+	 
   </PropertyGroup>
 
   <ItemGroup>

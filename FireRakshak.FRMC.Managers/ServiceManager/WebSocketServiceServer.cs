@@ -1613,17 +1613,49 @@ namespace FireRakshak.FRMC.Host
                                 break;
                             }
 
-                            var (success, error) = await dtsManager.WriteConfigurationIniAsync(iniPayload);
+                            byte? channelIndex = null;
+                                if (message.Payload.TryGetProperty("ChannelId", out var chProp) && chProp.TryGetInt32(out int chId) && chId >= 1)
+                                {
+                                    channelIndex = (byte)(chId - 1);
+                                }
+                                else if (message.Payload.TryGetProperty("ChannelIndex", out var chIdxProp) && chIdxProp.TryGetInt32(out int chIdx) && chIdx >= 0)
+                                {
+                                    channelIndex = (byte)chIdx;
+                                }
+
+                                var (success, readBackIni, error) = await dtsManager.ApplyCalibrationAndReadBackAsync(iniPayload, channelIndex);
 
                             if (success)
                             {
+                                List<object>? updatedPoints = null;
+                                if (channelIndex.HasValue)
+                                {
+                                    var channels = _configurationManager.GetChannels();
+                                    var targetChannel = channels.FirstOrDefault(c => c.Configuration.ChannelId == channelIndex.Value + 1);
+                                    if (targetChannel?.State?.CurrentData != null && targetChannel.State.CurrentData.Length > 0)
+                                    {
+                                        var validData = targetChannel.State.CurrentData
+                                            .Where(p => p.Position <= targetChannel.State.ActualLength && p.Temperature > -200)
+                                            .ToList();
+                                        if (validData.Count > 0)
+                                        {
+                                            updatedPoints = validData
+                                                .Select(p => (object)new { Position = p.Position, Temperature = p.Temperature })
+                                                .ToList();
+                                        }
+                                    }
+                                }
+
                                 await SendResponse(webSocket, new WebSocketMessage
                                 {
                                     MessageType = "SetDtsCalibration_response",
                                     Payload = JsonSerializer.SerializeToElement(new
                                     {
                                         Success = true,
-                                        Message = "DTS configuration written successfully"
+                                        IniPayload = readBackIni ?? string.Empty,
+                                        ChannelId = channelIndex.HasValue ? channelIndex.Value + 1 : 0,
+                                        Points = updatedPoints,
+                                        Message = "DTS configuration written and read back successfully"
                                     })
                                 }, cancellationToken).ConfigureAwait(false);
                             }
@@ -1635,7 +1667,7 @@ namespace FireRakshak.FRMC.Host
                                     Payload = JsonSerializer.SerializeToElement(new
                                     {
                                         Success = false,
-                                        Error = error ?? "Failed to write configuration to DTS hardware."
+                                        Error = error ?? "Failed to apply calibration configuration to DTS hardware."
                                     })
                                 }, cancellationToken).ConfigureAwait(false);
                             }
@@ -2177,27 +2209,6 @@ namespace FireRakshak.FRMC.Host
 
                             _logger.LogInformation("📥 GetChannelPoints received → Channel {Ch}", channelId);
 
-                            // 🚫 BLOCK DATA BEFORE START MEASUREMENT
-                            if (!_isStreamingActive)
-                            {
-                                _logger.LogInformation(
-                                    "🚫 GetChannelPoints blocked – measurement not started. Channel={ChannelId}",
-                                    channelId);
-
-                                await SendResponse(webSocket, new WebSocketMessage
-                                {
-                                    MessageType = "GetChannelPoints_response",
-                                    Payload = JsonSerializer.SerializeToElement(new
-                                    {
-                                        Success = true,
-                                        ChannelId = channelId,
-                                        Points = new List<object>()   // EMPTY
-                                    })
-                                }, cancellationToken);
-
-                                break;
-                            }
-
                             var channels = _configurationManager.GetChannels();
                             var channel = channels.FirstOrDefault(c => c.Configuration.ChannelId == channelId);
 
@@ -2212,6 +2223,27 @@ namespace FireRakshak.FRMC.Host
                                         Error = $"Channel {channelId} not found"
                                     })
                                 }, cancellationToken);
+                                break;
+                            }
+
+                            // 🚫 BLOCK DATA BEFORE START MEASUREMENT only if there is no existing or cached data
+                            if (!_isStreamingActive && (channel.State.CurrentData == null || channel.State.CurrentData.Length == 0))
+                            {
+                                _logger.LogInformation(
+                                    "🚫 GetChannelPoints blocked – measurement not started and no cached data. Channel={ChannelId}",
+                                    channelId);
+
+                                await SendResponse(webSocket, new WebSocketMessage
+                                {
+                                    MessageType = "GetChannelPoints_response",
+                                    Payload = JsonSerializer.SerializeToElement(new
+                                    {
+                                        Success = true,
+                                        ChannelId = channelId,
+                                        Points = new List<object>()   // EMPTY
+                                    })
+                                }, cancellationToken);
+
                                 break;
                             }
 

@@ -251,8 +251,17 @@ public class DtsManager : IDtsManager, IDisposable
             }
 
 
-            // Publish an event with the filtered temperature data using FRMC channel ID
-            await _eventAggregator.PublishAsync(new TemperatureDataReceivedEvent(frmcChannelId, temperatureData, DateTime.UtcNow));
+            // Check if returned data is entirely standby/idle (-273.1°C) when laser is not running
+            bool isStandby = temperatureData.Length > 0 && temperatureData.All(p => p.Temperature < -200);
+            if (!isStandby)
+            {
+                // Publish an event with the filtered temperature data using FRMC channel ID
+                await _eventAggregator.PublishAsync(new TemperatureDataReceivedEvent(frmcChannelId, temperatureData, DateTime.UtcNow));
+            }
+            else
+            {
+                _logger.LogDebug("Channel {ChannelId}: DTS returned standby data (-273.1°C); skipping TemperatureDataReceivedEvent to protect channel cache.", frmcChannelId);
+            }
 
             // ADDED: Track successful read
             _lastSuccessfulRead = DateTime.UtcNow;
@@ -1331,6 +1340,73 @@ public class DtsManager : IDtsManager, IDisposable
             _logger.LogError(ex, "Failed to write DTS configuration to hardware");
             return (false, ex.Message);
         }
+    }
+
+    /// <inheritdoc/>
+    public async Task<(bool Success, string? IniPayload, string? ErrorMessage)> ApplyCalibrationAndReadBackAsync(string iniPayload, byte? channelIndex = null)
+    {
+        _logger.LogInformation("Beginning DTS calibration write-and-readback transaction (ChannelIndex: {ChannelIndex})...", channelIndex);
+
+        var (writeSuccess, writeError) = await WriteConfigurationIniAsync(iniPayload);
+        if (!writeSuccess)
+        {
+            _logger.LogError("DTS calibration write transaction failed: {Error}", writeError);
+            return (false, null, writeError);
+        }
+
+        // If a channel is specified for calibration calculation, send CMD 0x23 to trigger DTS internal calculation
+        if (channelIndex.HasValue)
+        {
+            try
+            {
+                var calcCommand = DtsCommandBuilder.BuildTriggerCalibrationCalculationCommand(channelIndex.Value);
+                _logger.LogInformation("Sending DTS Trigger Calibration Calculation command (CMD 0x23 for Channel {ChannelIndex})...", channelIndex.Value);
+                var calcResponse = await _protocolHandler.SendCommandAndReceiveResponseAsync(calcCommand);
+
+                if (calcResponse != null && calcResponse.Length >= 10 &&
+                    calcResponse[0] == 0xCC && calcResponse[1] == 0xAA && calcResponse[7] == 0x23)
+                {
+                    _logger.LogInformation("DTS Calibration Calculation (CMD 0x23) acknowledged successfully by hardware.");
+                }
+                else
+                {
+                    _logger.LogWarning("DTS Calibration Calculation (CMD 0x23) unexpected response or timeout, proceeding to readback.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to send CMD 0x23 calibration trigger; proceeding to readback.");
+            }
+        }
+
+        // Brief delay to allow hardware internal memory synchronization
+        await Task.Delay(150);
+
+        _logger.LogInformation("Reading back updated DTS configuration following calibration write (CMD 0x02)...");
+        var (readSuccess, readIniPayload, readError) = await ReadConfigurationIniAsync();
+        if (!readSuccess || string.IsNullOrEmpty(readIniPayload))
+        {
+            _logger.LogWarning("Failed to read back updated DTS configuration after write: {Error}", readError);
+            // If readback failed but write succeeded, return write success with original payload or error info
+            return (false, null, readError ?? "Failed to read back updated configuration from DTS hardware.");
+        }
+
+        // If calibration was triggered for a channel, read the updated temperature curve (CMD 0x07)
+        if (channelIndex.HasValue)
+        {
+            try
+            {
+                _logger.LogInformation("Querying newly calibrated temperature curve from DTS for channel index {ChannelIndex} (CMD 0x07)...", channelIndex.Value);
+                await ReadChannelTemperatureAsync(channelIndex.Value);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to read updated temperature curve for channel {ChannelIndex} following calibration.", channelIndex.Value);
+            }
+        }
+
+        _logger.LogInformation("DTS calibration write-and-readback transaction completed successfully.");
+        return (true, readIniPayload, null);
     }
 
     private async Task SaveDtsBaselineConfigFileAsync(string iniPayload)

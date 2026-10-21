@@ -666,6 +666,13 @@ namespace FireRakshak.FRMC.Managers.SystemConfigurationManager
                         oldConfig.LogRetentionEnabled, config.LogRetentionEnabled);
                 }
 
+                if (oldConfig.LogMaxAgeDays != config.LogMaxAgeDays)
+                {
+                    await _auditTrailService.LogConfigurationChangeAsync(
+                        ConfigurationType.System, username, "LogMaxAgeDays",
+                        oldConfig.LogMaxAgeDays, config.LogMaxAgeDays);
+                }
+
                 if (oldConfig.LogTotalQuotaMB != config.LogTotalQuotaMB)
                 {
                     await _auditTrailService.LogConfigurationChangeAsync(
@@ -728,6 +735,7 @@ namespace FireRakshak.FRMC.Managers.SystemConfigurationManager
                     { "DtsModuleTempLowThreshold", config.DtsModuleTempLowThreshold },
                     { "DtsCommunicationTimeoutSeconds", config.DtsCommunicationTimeoutSeconds },
                     { "LogRetentionEnabled", config.LogRetentionEnabled },
+                    { "LogMaxAgeDays", config.LogMaxAgeDays },
                     { "LogTotalQuotaMB", config.LogTotalQuotaMB },
                     { "LogHighWatermarkMB", config.LogHighWatermarkMB },
                     { "LogLowWatermarkMB", config.LogLowWatermarkMB },
@@ -1136,12 +1144,14 @@ namespace FireRakshak.FRMC.Managers.SystemConfigurationManager
                 // Serialize system configuration without log retention fields (stored exclusively in appsettings.json)
                 var jObj = Newtonsoft.Json.Linq.JObject.FromObject(_systemConfiguration ?? new SystemConfiguration());
                 jObj.Remove("LogRetentionEnabled");
+                jObj.Remove("LogMaxAgeDays");
                 jObj.Remove("LogTotalQuotaMB");
                 jObj.Remove("LogHighWatermarkMB");
                 jObj.Remove("LogLowWatermarkMB");
                 jObj.Remove("LogCheckIntervalHours");
                 jObj.Remove("MinimumLogLevel");
                 jObj.Remove("logRetentionEnabled");
+                jObj.Remove("logMaxAgeDays");
                 jObj.Remove("logTotalQuotaMB");
                 jObj.Remove("logHighWatermarkMB");
                 jObj.Remove("logLowWatermarkMB");
@@ -1205,6 +1215,7 @@ namespace FireRakshak.FRMC.Managers.SystemConfigurationManager
                         {
                             var ret = jObj["LogRetention"];
                             if (ret["Enabled"] != null) config.LogRetentionEnabled = (bool)ret["Enabled"]!;
+                            if (ret["MaxAgeDays"] != null) config.LogMaxAgeDays = (int)ret["MaxAgeDays"]!;
                             if (ret["TotalQuotaMB"] != null) config.LogTotalQuotaMB = (long)ret["TotalQuotaMB"]!;
                             if (ret["HighWatermarkMB"] != null) config.LogHighWatermarkMB = (long)ret["HighWatermarkMB"]!;
                             if (ret["LowWatermarkMB"] != null) config.LogLowWatermarkMB = (long)ret["LowWatermarkMB"]!;
@@ -1275,6 +1286,7 @@ namespace FireRakshak.FRMC.Managers.SystemConfigurationManager
                             jObj["LogRetention"] = new Newtonsoft.Json.Linq.JObject();
 
                         jObj["LogRetention"]["Enabled"] = config.LogRetentionEnabled;
+                        jObj["LogRetention"]["MaxAgeDays"] = config.LogMaxAgeDays;
                         jObj["LogRetention"]["TotalQuotaMB"] = config.LogTotalQuotaMB;
                         jObj["LogRetention"]["HighWatermarkMB"] = config.LogHighWatermarkMB;
                         jObj["LogRetention"]["LowWatermarkMB"] = config.LogLowWatermarkMB;

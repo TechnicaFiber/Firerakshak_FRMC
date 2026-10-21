@@ -112,6 +112,38 @@ public static class DtsCommandBuilder
     }
 
     /// <summary>
+    /// Builds the command to trigger DTS temperature calibration/correction calculation for a channel (CMD 0x23).
+    /// Protocol frame format (11 bytes):
+    /// Bytes 0-1: 0xCC 0x55 (Header)
+    /// Bytes 2-5: 4-byte big-endian LEN = 5 (ADR + CMD + channelIndex + action + SUM)
+    /// Byte 6: 0xFF (Broadcast ADR)
+    /// Byte 7: 0x23 (CMD Calculate / Recalibrate Coefficients)
+    /// Byte 8: channelIndex (0-based, e.g., 0 for CH1, 1 for CH2)
+    /// Byte 9: 0x01 (Trigger action flag)
+    /// Byte 10: Checksum modulo-256 of preceding bytes
+    /// Example for Channel 1 (0): CC 55 00 00 00 05 FF 23 00 01 49
+    /// </summary>
+    /// <param name="channelIndex">0-based channel index (0 for CH1, 1 for CH2, etc.).</param>
+    /// <returns>The 11-byte command frame.</returns>
+    public static byte[] BuildTriggerCalibrationCalculationCommand(byte channelIndex)
+    {
+        var command = new byte[11];
+        command[0] = 0xCC; // FLAG1
+        command[1] = 0x55; // FLAG1
+        command[2] = 0x00; // LEN
+        command[3] = 0x00;
+        command[4] = 0x00;
+        command[5] = 0x05; // Declared length = 5
+        command[6] = 0xFF; // ADR
+        command[7] = 0x23; // CMD 0x23
+        command[8] = channelIndex; // Channel index (0-based)
+        command[9] = 0x01; // Trigger action
+        command[10] = CalculateChecksum(command, 10);
+
+        return command;
+    }
+
+    /// <summary>
     /// Builds command bytes for DTS command 0x07 (e.g., Read Health Parameters).
     /// </summary>
     /// <returns>Command bytes.</returns>

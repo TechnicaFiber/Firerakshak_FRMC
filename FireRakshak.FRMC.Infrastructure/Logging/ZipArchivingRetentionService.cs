@@ -60,6 +60,7 @@ namespace FireRakshak.FRMC.Infrastructure.Logging
             {
                 // Default / fallback configuration from appsettings.json
                 bool enabled = _configuration.GetValue<bool>("LogRetention:Enabled", true);
+                int maxAgeDays = _configuration.GetValue<int>("LogRetention:MaxAgeDays", 14);
                 long highMb = _configuration.GetValue<long>("LogRetention:HighWatermarkMB", 9216); // 9.0 GB
                 long lowMb = _configuration.GetValue<long>("LogRetention:LowWatermarkMB", 7680);   // 7.5 GB
                 int checkHours = _configuration.GetValue<int>("LogRetention:CheckIntervalHours", 12);
@@ -87,6 +88,7 @@ namespace FireRakshak.FRMC.Infrastructure.Logging
                                         if (sysConfig != null)
                                         {
                                             enabled = sysConfig.LogRetentionEnabled;
+                                            maxAgeDays = sysConfig.LogMaxAgeDays > 0 ? sysConfig.LogMaxAgeDays : maxAgeDays;
                                             highMb = sysConfig.LogHighWatermarkMB > 0 ? sysConfig.LogHighWatermarkMB : highMb;
                                             lowMb = sysConfig.LogLowWatermarkMB > 0 ? sysConfig.LogLowWatermarkMB : lowMb;
                                             checkHours = sysConfig.LogCheckIntervalHours > 0 ? sysConfig.LogCheckIntervalHours : checkHours;
@@ -112,13 +114,16 @@ namespace FireRakshak.FRMC.Infrastructure.Logging
                     try
                     {
                         _logger.LogInformation(
-                            "Executing scheduled log archiving and storage capacity pass (High={HighMb}MB, Low={LowMb}MB, Interval={CheckHours}h)...",
-                            highMb, lowMb, checkHours);
+                            "Executing scheduled log archiving and storage capacity pass (MaxAge={MaxAgeDays}d, High={HighMb}MB, Low={LowMb}MB, Interval={CheckHours}h)...",
+                            maxAgeDays, highMb, lowMb, checkHours);
                         
                         // 1. Archive closed daily log files into ZIP archives (SG-01, SG-02, SG-03)
                         ArchiveClosedLogs();
 
-                        // 2. Evaluate storage capacity and prune oldest archives if exceeding High Watermark (SG-04)
+                        // 2. Prune archives exceeding MaxAgeDays
+                        PruneExpiredArchives(maxAgeDays);
+
+                        // 3. Evaluate storage capacity and prune oldest archives if exceeding High Watermark (SG-04)
                         EnforceStorageCapacityCeiling(highWatermarkBytes, lowWatermarkBytes);
                     }
                     catch (Exception ex)
@@ -242,6 +247,56 @@ namespace FireRakshak.FRMC.Infrastructure.Logging
                 if (File.Exists(zipTmpPath))
                 {
                     try { File.Delete(zipTmpPath); } catch { }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Prunes historical ZIP log archives that are older than the configured MaxAgeDays.
+        /// </summary>
+        private void PruneExpiredArchives(int maxAgeDays)
+        {
+            if (maxAgeDays <= 0) return;
+
+            var cutoffTime = DateTime.UtcNow.AddDays(-maxAgeDays);
+
+            foreach (var folder in _targetFolders)
+            {
+                if (!Directory.Exists(folder)) continue;
+
+                try
+                {
+                    var dirInfo = new DirectoryInfo(folder);
+                    var zipFiles = dirInfo.GetFiles("*.zip", SearchOption.AllDirectories);
+
+                    foreach (var file in zipFiles)
+                    {
+                        var fileTime = file.LastWriteTimeUtc > file.CreationTimeUtc ? file.LastWriteTimeUtc : file.CreationTimeUtc;
+                        if (fileTime < cutoffTime)
+                        {
+                            if (IsFileLocked(file))
+                            {
+                                _logger.LogWarning("Skipping locked expired ZIP archive: {FileName}", file.Name);
+                                continue;
+                            }
+
+                            try
+                            {
+                                long length = file.Length;
+                                file.Delete();
+                                _logger.LogInformation("Pruned expired ZIP archive older than {Days} days: {FileName} ({BytesMb:F2} MB freed)",
+                                    maxAgeDays, file.Name, length / (1024.0 * 1024.0));
+                            }
+                            catch (Exception ex)
+                            {
+                                _logger.LogError(ex, "Error deleting expired ZIP archive: {FileName}", file.Name);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error scanning folder for expired archives: {Folder}", folder);
                 }
             }
         }

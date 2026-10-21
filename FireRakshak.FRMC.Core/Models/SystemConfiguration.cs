@@ -119,6 +119,12 @@ namespace FireRakshak.FRMC.Core.Models
         public bool LogRetentionEnabled { get; set; } = true;
 
         /// <summary>
+        /// Maximum retention age in days for historical log archives. Archives older than this will be pruned.
+        /// Default: 14 days
+        /// </summary>
+        public int LogMaxAgeDays { get; set; } = 14;
+
+        /// <summary>
         /// Maximum total storage quota for logs in MB.
         /// Default: 10240 MB (10 GB)
         /// </summary>
